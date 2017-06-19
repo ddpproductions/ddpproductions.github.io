@@ -1,0 +1,143 @@
+@font-face {
+	font-family: Futura LT;
+	src: url("futura.ttf");
+}
+
+html {
+	box-sizing: border-box;
+	overflow:hidden;
+}
+
+img {
+	width: 100%;
+}
+
+body{
+	height: 100vh;
+	margin: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+	transition: 1s;
+	-webkit-transition: 1s;
+	perspective: 1px;
+	-webkit-perspective: 1px;
+	background-color: #000;
+}
+
+.style {
+	padding: 15vh;
+	background-color: #000;
+	box-shadow: 0px 0px 150px 120px #000;
+	position: relative;
+	z-index: 2;
+	font-family: Futura LT, Helvetica Neue, Avenir Next;
+	font-size: 1.5em;
+	text-align: left;
+	color: white;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+#dtcotc {
+	display: none;
+}
+
+#mtotc {
+	display: none;
+}
+
+#medite {
+	display: none;
+}
+
+#dedite {
+	display: none;
+}
+
+.parallax-group {
+	
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.back{
+	transform: translateZ(-0.9px) scale(2.2);
+	-webkit-transform: translateZ(-0.9px) scale(2.2);
+	position: relative;
+	top: calc(((100vh - 66.666666667vw) / 4 * -2));
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.back:hover {
+	transform: translateZ(-1px) scale(2.2);
+	-webkit-transform: translateZ(-1px) scale(2.2);
+	position: relative;
+	top: calc(((100vh - 66.666666667vw) / 4 * -2));
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.middle {
+	transform: translateZ(0.5px) scale(0.2);
+	-webkit-transform: translateZ(0.5px) scale(0.2);
+	position: absolute;
+	top: 1vmin;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: Futura LT, Helvetica Neue, Avenir Next;
+	font-size: 300px;
+	text-shadow: 1px 1px 100px #000;
+	animation: slide-in 1s 1;
+	-webkit-animation: slide-in 1s 1;
+	transition: 1s;
+	-webkit-transition: 1s;
+	
+}
+.front {
+	
+	
+}
+
+.button {
+	padding: 1vmin;
+	background-color: black;
+	color: white;
+	font-family: Futura LT, Helvetica Neue, Avenir Next;
+	font-size: 1.8em;
+	border: solid white 5px;
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+.button:hover {
+	
+	background-color: white;
+	color:black;
+	border: solid white 5px;
+}
+
+@keyframes color {
+	0% {background-color: #000; box-shadow: 10px 10px 100px 15px #000;}
+	50%{background-color: #222; box-shadow: -10px -10px 150px 10px #000;}
+	100%{background-color: #000; box-shadow: 10px 10px 100px 15px #000;}
+}
+
+@-webkit-keyframes color {
+	0% {background-color: #000; box-shadow: 10px 10px 100px 15px #000;}
+	50%{background-color: #222; box-shadow: -10px -10px 150px 10px #000;}
+	100%{background-color: #000; box-shadow: 10px 10px 100px 15px #000;}
+	
+}
+
+@keyframes slide-in {
+	0% {text-shadow: 1px 1px 100px #000; filter: blur(0px);}
+	25% {text-shadow: 10px 10px 10px #000; filter: blur(5px);}
+	50% {text-shadow: 1px 1px 200px #000; filter: blur(20px);}
+	100% {text-shadow: 1px 1px 100px #000; filter: blur(0px);}
+}
+	
+}
